@@ -1,1 +1,12 @@
-console.log(Math.floor(Math.random() * 100) + 1);
+const timer = setInterval(function(a,b){
+    for (let i=a; i<=b; i++){
+        console.log(i);
+
+        if (i ==b){
+            clearInterval(timer);
+        }
+    }
+}, 1000,5,10);
+
+
+

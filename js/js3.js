@@ -1,2 +1,7 @@
-let str = "Hello";
-console.log(str.split("").reverse().join(''));
+function sum(a) {
+    return function (b) {
+        return a + b;
+    }
+}
+
+console.log(sum(4)(6));
